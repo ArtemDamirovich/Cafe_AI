@@ -1,0 +1,254 @@
+﻿@page "/admin/review"
+
+<div class="mb-4">
+    <h1>✅ Модерация блюд</h1>
+    <p class="text-muted">Просматривайте и одобряйте блюда, созданные поварами и ИИ</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-warning">@pendingDishes.Count</h1>
+                <p class="text-muted">⏳ Ожидают модерации</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-success">@approvedCount</h1>
+                <p class="text-muted">✅ Одобрено</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-danger">@rejectedCount</h1>
+                <p class="text-muted">❌ Отклонено</p>
+            </div>
+        </div>
+    </div>
+</div>
+@if(!pendingDishes.Any())
+{
+    <div class="text-center mt-5">
+        <div style="font-size: 5rem;">🎉</div>
+        <h4 class="text-muted">Все блюда обработаны!</h4>
+        <p>Новых блюд на модерации нет.</p>
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach(var dish in pendingDishes)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    @if(dish.IsAiGenerated)
+                    {
+                        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                            <span>🤖 Создать с помощью ИИ</span>
+                            <span class="badge bg-light text-dark">@dish.Difficulty</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>👨‍🍳 Создано повором!</span>
+                            <span class="badge bg-secondary">@dish.Difficulty</span>
+                        </div>
+                    }
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="card-title mb-0">@dish.Name</h5>
+                            <span class="fs-5 fw-bold text-success">@dish.Price₽</span>
+                        </div>
+                        <p class="card-text text-muted">
+                            @(dish.Description?.Length > 120 ? dish.Description.Substring(0, 120) + "..." : dish.Description)
+                        </p>
+                        <div class="mb-3">
+                            @foreach(var ingredient in dish.Ingredients.Take(5))
+                            {
+                                <span class="badge bg-light text-dark me-1 mb-1">@ingredient</span>
+                            }
+                            @if(dish.Ingredients.Count > 5)
+                            {
+                                <span class="badge bg-secondary">+@(dish.Ingredients.Count - 5)</span>
+                            }
+                        </div>
+                        <div class="row text-muted small">
+                            <div class="col-md-4">
+                                ⏱️ @dish.CookingTimeMinutes мин.
+                            </div>
+                            <div class="col-md-4">
+                                🔥 @dish.Calories ккал.
+                            </div>
+                            <div class="col-md-4">
+                                🍽️ @GetMealTypeName(dish.MealType)
+                            </div>
+                        </div>
+                        @if(dish.Allergens.Any())
+                        {
+                            <div class="mt-2">
+                                <small class="text-warning">⚠️ Аллергены:</small>
+                                @foreach(var allergen in dish.Allergens)
+                                {
+                                    <span class="badge bg-warning text-dark me-1">@allergen</span>
+                                }
+                            </div>
+                        }
+                        <div class="card-footer d-flex gap-2">
+                            <button class="btn btn-success flex-grow-1"
+                                    @onclick="() => ShowDetails(dish)">
+                                📖 Рассмотреть
+                            </button>
+                            <button class="btn btn-outline-success"
+                                    @onclick="() => ApproveDish(dish)">
+                                ✅
+                            </button>
+                            <button class="btn btn-outline-danger" @onclick="() => ShowRejectModal(dish)">
+                                ❌
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+@if (selectedDish != null)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">📖 @selectedDish.Name</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDetails"></button>
+                </div>
+                <div class="modal-body">
+                    <p>@selectedDish.Description</p>
+                    @if (!string.IsNullOrEmpty(selectedDish.Recipe))
+                    {
+                        <h6>👨‍🍳 Рецепт</h6>
+                        <p style="white-space: pre-line;">@selectedDish.Recipe</p>
+                    }
+                    <ul>
+                        @foreach (var ingredient in selectedDish.Ingredients)
+                        {
+                            <li>@ingredient</li>
+                        }
+                    </ul>
+                    @if (selectedDish.Allergens.Any())
+                    {
+                        <h6>⚠️ Аллергены</h6>
+                        <div>
+                            @foreach (var allergen in selectedDish.Allergens)
+                            {
+                                <span class="badge bg-warning text-dark me-1">@allergen</span>
+                            }
+                        </div>
+                    }
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center py-3">
+                                    <h5 class="text-success mb-0">@selectedDish.Price ₽</h5>
+                                    <small class="text-muted">Цена</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center py-3">
+                                    <h5 class="mb-0">@selectedDish.CookingTimeMinutes</h5>
+                                    <small class="text-muted">Минут</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center py-3">
+                                    <h5 class="mb-0">@selectedDish.Calories</h5>
+                                    <small class="text-muted">Ккал</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center py-3">
+                                    <h5 class="mb-0">@selectedDish.Difficulty</h5>
+                                    <small class="text-muted">Сложность</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @if (selectedDish.IsAiGenerated)
+                    {
+                        <div class="alert alert-info mt-3 mb-0">
+                            🤖 Это блюдо создано искусственным интеллектом.
+                            Проверьте рецепт особенно тщательно.
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseDetails">
+                        Закрыть
+                    </button>
+                    <button type="button" class="btn btn-danger" @onclick="() => ShowRejectModal(selectedDish)">
+                        ❌ Отклонить
+                    </button>
+                    <button type="button" class="btn btn-success" @onclick="() => ApproveDish(selectedDish)">
+                        ✅ Одобрить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@if (dishToReject != null)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">❌ Отклонить блюдо</h5>
+                    <button type="button" class="btn-close" @onclick="CloseRejectModal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы уверены, что хотите отклонить блюдо <strong>"@dishToReject.Name"</strong>?</p>
+                    <div class="mb-3">
+                        <label class="form-label">Причина отклонения</label>
+                        <textarea class="form-control"
+                                  @bind="rejectReason"
+                                  rows="3"
+                                  placeholder="Укажите причину..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseRejectModal">
+                        Отмена
+                    </button>
+                    <button type="button" class="btn btn-danger" @onclick="ConfirmReject">
+                        ❌ Отклонить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@if (notificationMessage != null)
+{
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+        <div class="toast show align-items-center text-white @notificationClass" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                    @notificationMessage
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                        @onclick="() => notificationMessage = null"></button>
+            </div>
+        </div>
+    </div>
+}

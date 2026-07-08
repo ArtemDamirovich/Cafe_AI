@@ -1,0 +1,16 @@
+﻿<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="typeof(Layout.MainLayout)">
+            <div class="container text-center mt-5">
+                <h1 class="display-4">🍽️ 404</h1>
+                <p class="lead">Такого блюда нет в меню!</p>
+                <p>Возможно, страница была удалена или вы ошиблись адресом</p>
+                <a href="/" class="btn btn-primary mt-3">🏠 На главную</a>
+            </div>
+        </LayoutView>
+    </NotFound>
+</Router>

@@ -1,0 +1,76 @@
+﻿@using Cafe_AI.Core.Enums
+@inherits LayoutComponentBase
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-2 bg-dark text-white min-vh-100 p-3">
+            <h4 class="mb-4">☕Кафе "Для своих"</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <NavLink href="/" Match="NavLinkMatch.All" class="nav-link text-white">
+                        🏠 Главная
+                    </NavLink>
+                </li>
+                <li class="nav-item mb-2">
+                    <NavLink href="/menu" class="nav-link text-white">
+                        📋 Меню
+                    </NavLink>
+                </li>
+                @if(CurrentUserRole == UserRole.Admin || CurrentUserRole == UserRole.Chef)
+                {
+                    <li class="nav-item mb-2">
+                        <NavLink href="/chef/generate" class="nav-link text-white">
+                            🤖 ИИ-генератор
+                        </NavLink>
+                    </li>
+                }
+                @if(CurrentUserRole == UserRole.Admin)
+                {
+                    <li class="nav-item mb-2">
+                        <NavLink href="/admin/review" class="nav-item text-white">
+                            ✅ Модерация
+                        </NavLink>
+                    </li>
+                }                
+                <li class="nav-item mb-2">
+                    <NavLink href="/chat" class="nav-link text-white">
+                        💬 Чат
+                    </NavLink>
+                </li>
+
+                <hr class="my-3" style="border-color:rgba(255,255,255.0.2);"/>
+
+                <li class="nav-item mb-3">
+                    <div class="text-white-50 small">
+                        Роль: <strong>@GetRoleName(CurrentUserRole)</strong>
+                    </div>
+                </li>
+
+                <li class="nav-item mt-2">
+                    <span class="text-white-50 small d-block mb-2">Сменить роль:</span>
+                    <button class="btn btn-sm btn-outline-light w-100 mb-1"
+                            @onclick="() => SetRole(UserRole.Admin)">
+                        👑 Админ
+                    </button>
+                    <button class="btn btn-sm btn-outline-light w-100 mb-1"
+                            @onclick="() => SetRole(UserRole.Chef)">
+                        👨‍🍳 Повар
+                    </button>
+                    <button class="btn btn-sm btn-outline-light w-100"
+                            @onclick="() => SetRole(UserRole.Waiter)">
+                        💁 Официант
+                    </button>
+                </li>
+
+                <li class="nav-item">
+                    <NavLink href="/settings" class="nav-link text-white">
+                        ⚙️ Настройки
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
+        <main class="col-10 p-4">
+            @Body
+        </main>
+    </div>
+</div>
