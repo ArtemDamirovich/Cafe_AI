@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Элементы решения/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="Cafe_AI.Core/Cafe_AI.Core.csproj" />
+  <Project Path="Cafe_AI1/Cafe_AI1.csproj" />
+</Solution>

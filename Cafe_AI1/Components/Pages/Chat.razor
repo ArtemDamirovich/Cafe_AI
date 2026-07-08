@@ -1,0 +1,149 @@
+﻿@page "/chat"
+
+<div class="row h-100">
+    <div class="col-md-3 border-end">
+        <div class="p-3">
+            <h5>👥 Сотрудники</h5>
+            <div class="input-group mb-3">
+                <span class="input-group-text">🔍</span>
+                <input type="text" class="form-control" placeholder="Поиск..." />
+            </div>
+
+            <ul class="list-group">
+                @foreach (var user in onlineUsers)
+                {
+                    <li class="list-group-item d-flex align-items-center @(selectedUser == user ? "active" : "")"
+                        @onclick="() => SelectUser(user)"
+                        style="cursor: pointer;">
+                        <div class="me-2">
+                            <span class="online-indicator @(user.IsOnline ? "online" : "offline")"></span>
+                        </div>
+                        <div>
+                            <strong>@user.Name</strong>
+                            <br />
+                            <small class="text-muted">@user.Role</small>
+                        </div>
+                        @if (user.UnreadCount > 0)
+                        {
+                            <span class="badge bg-danger ms-auto">@user.UnreadCount</span>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-9 d-flex flex-column" style="height: 80vh;">
+
+        <div class="border-bottom p-3 d-flex justify-content-between align-items-center">
+            <div>
+                @if (isAiChat)
+                {
+                    <h5 class="mb-0">🤖 ИИ-ассистент</h5>
+                    <small class="text-muted">Всегда онлайн, отвечает мгновенно</small>
+                }
+                else if (selectedUser != null)
+                {
+                    <h5 class="mb-0">@selectedUser.Name</h5>
+                    <small class="text-muted">@selectedUser.Role</small>
+                }
+                else
+                {
+                    <h5 class="mb-0">💬 Чат команды</h5>
+                    <small class="text-muted">Выберите сотрудника или ИИ-ассистента</small>
+                }
+            </div>
+
+            <div class="d-flex gap-2">
+                <button class="btn @(!isAiChat ? "btn-primary" : "btn-outline-primary") btn-sm"
+                        @onclick="() => SwitchToPeopleChat()">
+                    👥 Чат с людьми
+                </button>
+                <button class="btn @(isAiChat ? "btn-primary" : "btn-outline-primary") btn-sm"
+                        @onclick="() => SwitchToAiChat()">
+                    🤖 ИИ-ассистент
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-grow-1 overflow-auto p-3" id="chatMessages">
+            @if (!currentMessages.Any())
+            {
+                <div class="text-center text-muted mt-5">
+                    <div style="font-size: 3rem;">💬</div>
+                    <p>Нет сообщений. Начните общение!</p>
+                </div>
+            }
+            else
+            {
+                @foreach (var message in currentMessages)
+                {
+                    var isMyMessage = message.SenderId == currentUserId;
+                    var isAiMessage = message.SenderId == "ai-assistant";
+
+                    <div class="d-flex mb-3 @(isMyMessage ? "justify-content-end" : "justify-content-start")">
+                        @if (!isMyMessage)
+                        {
+                            <div class="me-2">
+                                <div class="avatar-small @(isAiMessage ? "bg-info" : "bg-secondary") text-white rounded-circle d-flex align-items-center justify-content-center"
+                                     style="width: 40px; height: 40px;">
+                                    @(isAiMessage ? "🤖" : message.SenderName?.Substring(0, 1).ToUpper())
+                                </div>
+                            </div>
+                        }
+                        <div>
+                            @if (!isMyMessage)
+                            {
+                                <small class="text-muted">@message.SenderName</small>
+                            }
+                            <div class="p-2 rounded @(isMyMessage ? "bg-primary text-white" : isAiMessage ? "bg-info text-dark" : "bg-light")"
+                                 style="max-width: 400px;">
+                                @message.Content
+                            </div>
+                            <small class="text-muted d-block @(isMyMessage ? "text-end" : "")">
+                                @message.SentAt.ToString("HH:mm")
+                            </small>
+                        </div>
+                        @if (isMyMessage)
+                        {
+                            <div class="ms-2">
+                                <div class="avatar-small bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                                     style="width: 40px; height: 40px;">
+                                    @currentUserName?.Substring(0, 1).ToUpper()
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="border-top p-3">
+            <div class="input-group">
+                <input type="text"
+                       class="form-control"
+                       placeholder="@(isAiChat ? "Спросите ИИ-ассистента..." : "Введите сообщение...")"
+                       @bind="newMessage"
+                       @bind:event="oninput"
+                       @onkeydown="HandleKeyPress" />
+                <button class="btn btn-primary" @onclick="SendMessage" disabled="@string.IsNullOrWhiteSpace(newMessage)">
+                    📤 Отправить
+                </button>
+            </div>
+            @if (isAiChat)
+            {
+                <div class="mt-2 d-flex flex-wrap gap-1">
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => AskAiQuickQuestion("Что сегодня в меню?")'>
+                        📋 Меню
+                    </button>
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => AskAiQuickQuestion("Предложи блюдо дня")'>
+                        🍽️ Блюдо дня
+                    </button>
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => AskAiQuickQuestion("Какие блюда самые популярные?")'>
+                        📊 Популярность
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

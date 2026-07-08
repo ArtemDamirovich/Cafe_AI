@@ -1,0 +1,128 @@
+﻿@page "/"
+
+<div class="mb-4">
+    <h1 class="mb-2">👋 Добро пожаловать в кафе "Свои"</h1>
+    <p class="text-muted">Здесь вы можете управлять меню, общаться с командой и создавать новые блюда с помощью ИИ</p>
+</div>
+
+@* Карточки быстрых действий *@
+<div class="row mb-4">
+
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">📋 Меню</h5>
+                <p class="card-text">
+                    Просмотр текущего меню, поиск блюд по ингредиентам и категориям
+                </p>
+                <a href="/menu" class="btn btn-primary">
+                    Открыть меню
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">🤖 ИИ-генератор</h5>
+                <p class="card-text">
+                    Создавайте уникальные блюда с помощью искусственного интеллекта
+                </p>
+                <a href="/chef/generate" class="btn btn-success">
+                    Создать блюдо
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">💬 Чат команды</h5>
+                <p class="card-text">
+                    Общайтесь с коллегами, обсуждайте рецепты и координируйте работу
+                </p>
+                <a href="/chat" class="btn btn-success">
+                    Открыть чат
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@* Статистика *@
+<div class="row mb-4">
+
+    <div class="col-md-3 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-primary">24</h1>
+                <p class="text-muted">🍽️ Блюд в меню</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-warning">5</h1>
+                <p class="text-muted">⏳ На модерации</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-success">18</h1>
+                <p class="text-muted">🤖 Создано с ИИ</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <h1 class="display-4 text-info">3</h1>
+                <p class="text-muted">👥 Сотрудников онлайн</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@* Последние действия *@
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">📝 Последние действия</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>🍳 <strong>Иван (Повар)</strong> создал блюдо "Кабачковые оладьи"</span>
+                    <span class="badge bg-warning rounded-pill">На модерации</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>✅ <strong>Анна (Админ)</strong> одобрила "Салат с арбузом"</span>
+                    <span class="badge bg-success rounded-pill">Одобрено</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>🤖 <strong>ИИ-ассистент</strong> предложил 3 летних десерта</span>
+                    <span class="badge bg-info rounded-pill">Черновик</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>💬 <strong>Мария (Официант)</strong> оставила комментарий к "Пасте Карбонара"</span>
+                    <span class="badge bg-secondary rounded-pill">Комментарий</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

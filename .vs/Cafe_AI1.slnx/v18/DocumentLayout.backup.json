@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cafe \u0441 AI\\Cafe_AI1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai.core\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai.core\\entities\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\entities\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\menu.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\menu.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\menu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\menu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishgenerator.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishgenerator.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\layout\\mainlayout.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishreview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishreview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai.core\\models\\dishgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\models\\dishgenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai.core\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Chat.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:04:53.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:19:06.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Chat.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Chat.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Chat.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:32:49.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DishGenerator.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwEcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:19:10.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\User.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\User.cs",
+              "RelativeToolTip": "Cafe_AI.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:26:27.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DishGenerator.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:19:28.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DishReview.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:11:56.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:20:46.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwH8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:28:17.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Menu.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Menu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:44:05.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:44:13.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\ChatMessage.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\ChatMessage.cs",
+              "RelativeToolTip": "Cafe_AI.Core\\Entities\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:26:24.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\Dish.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\Dish.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\Dish.cs",
+              "RelativeToolTip": "Cafe_AI.Core\\Entities\\Dish.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:26:26.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:33:29.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:33:30.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainLayout.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:06:12.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Weather.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Weather.razor",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:20:04.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Routes.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Routes.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:22:48.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\App.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\App.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:22:49.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Program.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Program.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Program.cs",
+              "RelativeToolTip": "Cafe_AI1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:22:45.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\_Imports.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\_Imports.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:20:11.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DishReview.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishReview.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishReview.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAKAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:19:22.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-08T13:33:31.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Core\\Enums\\UserRole.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Enums\\UserRole.cs",
+              "RelativeToolTip": "Cafe_AI.Core\\Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:26:28.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DishGenerationRequest.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
+              "RelativeToolTip": "Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:26:29.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-08T13:06:15.365Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
