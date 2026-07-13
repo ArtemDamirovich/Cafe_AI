@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cafe_AI.Core\Cafe_AI.Core.csproj" />
+    <ProjectReference Include="..\Cafe_AI.DAL\Cafe_AI.DAL.csproj" />
+    <ProjectReference Include="..\Cafe_AI.Services\Cafe_AI.Services.csproj" />
   </ItemGroup>
 
 </Project>

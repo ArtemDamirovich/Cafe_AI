@@ -4,5 +4,7 @@
     <File Path="docker-compose.yml" />
   </Folder>
   <Project Path="Cafe_AI.Core/Cafe_AI.Core.csproj" />
+  <Project Path="Cafe_AI.DAL/Cafe_AI.DAL.csproj" Id="8990dede-06a3-4025-b55e-6ff4a0284ce6" />
+  <Project Path="Cafe_AI.Services/Cafe_AI.Services.csproj" Id="39f3946c-9f2f-48a3-a4f9-07e1af56e27a" />
   <Project Path="Cafe_AI1/Cafe_AI1.csproj" />
 </Solution>

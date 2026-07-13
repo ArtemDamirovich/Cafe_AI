@@ -15,5 +15,8 @@
         public bool IsAiGenerated { get; set; }
         public string? ImageUrl { get; set; }
         public string Difficulty { get; set; } = string.Empty;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public bool IsApproved { get; set; } = false;
+        public bool IsRejected { get; set; } = false;
     }
 }

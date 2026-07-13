@@ -2,17 +2,16 @@ version: '3.8'
 
 services:
   postgres:
-    image: pgvector/pgvector:pg16
+    image: postgres:16
     container_name: cafe_ai_db
     environment:
-      POSTGRES_DB: cafesvoidb
-      POSTGRES_USER: cafe_admin
-      POSTGRES_PASSWORD: cafe_secret_123
+      POSTGRES_DB: cafeaidb
+      POSTGRES_USER: cafe
+      POSTGRES_PASSWORD: 123456
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-    restart: unless-stopped
+      - pgdata:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+    pgdata:

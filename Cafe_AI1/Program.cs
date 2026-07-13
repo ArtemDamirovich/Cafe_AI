@@ -1,10 +1,18 @@
 using Cafe_AI1.Components;
+using Microsoft.EntityFrameworkCore;
+using Cafe_AI.DAL;
+using Cafe_AI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<DishService>();
 
 var app = builder.Build();
 
@@ -23,5 +31,11 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+using(var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DataSeeder.Seed(context);
+}
 
 app.Run();

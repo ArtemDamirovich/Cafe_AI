@@ -1,12 +1,10 @@
 ﻿@page "/menu"
 
-@* Заголовок страницы *@
 <div class="mb-4">
     <h1>📋 Меню кафе "Свои"</h1>
     <p class="text-muted">Все блюда, одобренные администратором</p>
 </div>
 
-@* Панель поиска и фильтров *@
 <div class="row mb-4">
     <div class="col-md-8">
         <input type="text"
@@ -27,9 +25,7 @@
     </div>
 </div>
 
-@* Сетка с блюдами *@
 <div class="row">
-
     @if (!filteredDishes.Any())
     {
         <div class="col-12 text-center mt-5">
@@ -43,31 +39,17 @@
         {
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card h-100 shadow-sm">
-
-                    @if (!string.IsNullOrEmpty(dish.ImageUrl))
-                    {
-                        <img src="@dish.ImageUrl"
-                             class="card-img-top"
-                             alt="@dish.Name"
-                             style="height: 200px; object-fit: cover;" />
-                    }
-                    else
-                    {
-                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                             style="height: 200px;">
-                            <span style="font-size: 3rem;">🍽️</span>
-                        </div>
-                    }
-
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
+                         style="height: 200px;">
+                        <span style="font-size: 3rem;">🍽️</span>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">@dish.Name</h5>
-
                         <p class="card-text text-muted">
                             @(dish.Description?.Length > 100
                                                 ? dish.Description.Substring(0, 100) + "..." 
                                                                         : dish.Description)
                         </p>
-
                         <div class="mb-2">
                             @foreach (var ingredient in dish.Ingredients.Take(3))
                             {
@@ -78,61 +60,44 @@
                                 <span class="badge bg-secondary">+@(dish.Ingredients.Count - 3)</span>
                             }
                         </div>
-
                         <div class="d-flex justify-content-between align-items-center mt-3">
                             <span class="fs-4 fw-bold text-success">@dish.Price ₽</span>
                             <span class="text-muted">⏱️ @dish.CookingTimeMinutes мин.</span>
                         </div>
-
                         @if (dish.IsAiGenerated)
                         {
                             <span class="badge bg-info mt-2">🤖 Создано с ИИ</span>
                         }
                     </div>
-
                     <div class="card-footer bg-white border-top-0">
                         <button class="btn btn-outline-primary btn-sm w-100"
                                 @onclick="() => ShowDishDetail(dish)">
                             📖 Подробнее
                         </button>
                     </div>
-
                 </div>
             </div>
         }
     }
 </div>
 
-@* Модальное окно с деталями блюда *@
 @if (selectedDish != null)
 {
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-
                 <div class="modal-header">
                     <h5 class="modal-title">@selectedDish.Name</h5>
                     <button type="button" class="btn-close" @onclick="CloseModal"></button>
                 </div>
-
                 <div class="modal-body">
-
-                    @if (!string.IsNullOrEmpty(selectedDish.ImageUrl))
-                    {
-                        <img src="@selectedDish.ImageUrl"
-                             class="img-fluid rounded mb-3"
-                             alt="@selectedDish.Name" />
-                    }
-
                     <h6>📝 Описание</h6>
                     <p>@selectedDish.Description</p>
-
                     @if (!string.IsNullOrEmpty(selectedDish.Recipe))
                     {
                         <h6>👨‍🍳 Рецепт</h6>
                         <p style="white-space: pre-line;">@selectedDish.Recipe</p>
                     }
-
                     <h6>🥘 Ингредиенты</h6>
                     <ul>
                         @foreach (var ingredient in selectedDish.Ingredients)
@@ -140,7 +105,6 @@
                             <li>@ingredient</li>
                         }
                     </ul>
-
                     @if (selectedDish.Allergens.Any())
                     {
                         <h6>⚠️ Аллергены</h6>
@@ -151,7 +115,6 @@
                             }
                         </div>
                     }
-
                     <div class="row mt-3">
                         <div class="col-md-4">
                             <strong>💰 Цена:</strong> @selectedDish.Price ₽
@@ -163,15 +126,10 @@
                             <strong>🔥 Калории:</strong> @selectedDish.Calories ккал
                         </div>
                     </div>
-
                 </div>
-
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" @onclick="CloseModal">
-                        Закрыть
-                    </button>
+                    <button type="button" class="btn btn-secondary" @onclick="CloseModal">Закрыть</button>
                 </div>
-
             </div>
         </div>
     </div>
