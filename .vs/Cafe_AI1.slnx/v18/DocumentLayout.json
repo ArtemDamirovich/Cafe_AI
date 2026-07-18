@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Cafe \u0441 AI\\Cafe_AI1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishreview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishreview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishreview.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\menu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -99,16 +115,8 @@
       "RelativeMoniker": "D:0:0:{E34F2D12-064F-F4B6-47DA-587D68533353}|Cafe_AI.Core\\Cafe_AI.Core.csproj|solutionrelative:cafe_ai.core\\entities\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\dishgenerator.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\dishgenerator.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -117,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|solutionrelative:cafe_ai1\\components\\pages\\chat.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC07D852-2B78-BD69-3961-195D3154A4D0}|Cafe_AI1\\Cafe_AI1.csproj|d:\\cafe \u0441 ai\\cafe_ai1\\cafe_ai1\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -170,24 +174,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataSeeder.cs",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\DataSeeder.cs",
-              "RelativeDocumentMoniker": "Cafe_AI.DAL\\DataSeeder.cs",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\DataSeeder.cs*",
-              "RelativeToolTip": "Cafe_AI.DAL\\DataSeeder.cs*",
-              "ViewState": "AgIAADYAAAAAAAAAAADwv0UAAAABAAAAAAAAAA==",
+              "Title": "Home.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Home.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor.cs*",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Home.razor.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T08:18:56.904Z",
+              "WhenOpened": "2026-07-18T08:47:00.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Program.cs",
               "RelativeDocumentMoniker": "Cafe_AI1\\Program.cs",
@@ -200,7 +204,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DishReview.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwF4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:11:56.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DishGenerator.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs*",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:19:28.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor*",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Home.razor*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-08T13:28:17.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.DAL\\DataSeeder.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\DataSeeder.cs",
+              "RelativeToolTip": "Cafe_AI.DAL\\DataSeeder.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADwv0UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T08:18:56.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Chat.razor.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:04:53.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Cafe_AI.DAL\\AppDbContext.cs",
@@ -213,7 +282,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "DishService.cs",
+              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Services\\DishService.cs",
+              "RelativeDocumentMoniker": "Cafe_AI.Services\\DishService.cs",
+              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Services\\DishService.cs",
+              "RelativeToolTip": "Cafe_AI.Services\\DishService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-17T11:50:53.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Cafe_AI.DAL\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -226,20 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DishService.cs",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Services\\DishService.cs",
-              "RelativeDocumentMoniker": "Cafe_AI.Services\\DishService.cs",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Services\\DishService.cs*",
-              "RelativeToolTip": "Cafe_AI.Services\\DishService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:50:53.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Cafe_AI.DAL.csproj",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\Cafe_AI.DAL.csproj",
               "RelativeDocumentMoniker": "Cafe_AI.DAL\\Cafe_AI.DAL.csproj",
@@ -252,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "DishReview.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishReview.razor",
@@ -265,20 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DishReview.razor.cs",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
-              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
-              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishReview.razor.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAuwC4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:11:56.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Menu.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Menu.razor",
@@ -291,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Menu.razor.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Menu.razor.cs",
@@ -303,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Cafe_AI1.csproj",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Cafe_AI1.csproj",
               "RelativeDocumentMoniker": "Cafe_AI1\\Cafe_AI1.csproj",
@@ -316,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "20260715064004_InitialCreate.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\Migrations\\20260715064004_InitialCreate.cs",
               "RelativeDocumentMoniker": "Cafe_AI.DAL\\Migrations\\20260715064004_InitialCreate.cs",
@@ -328,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "20260718060246_AddDishStatusFields.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.DAL\\Migrations\\20260718060246_AddDishStatusFields.cs",
               "RelativeDocumentMoniker": "Cafe_AI.DAL\\Migrations\\20260718060246_AddDishStatusFields.cs",
@@ -340,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Dish.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\Dish.cs",
               "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\Dish.cs",
@@ -352,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "DishGenerationRequest.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
               "RelativeDocumentMoniker": "Cafe_AI.Core\\Models\\DishGenerationRequest.cs",
@@ -364,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -376,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\appsettings.json",
               "RelativeDocumentMoniker": "Cafe_AI1\\appsettings.json",
@@ -388,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Cafe_AI.Services.csproj",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Services\\Cafe_AI.Services.csproj",
               "RelativeDocumentMoniker": "Cafe_AI.Services\\Cafe_AI.Services.csproj",
@@ -401,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Cafe_AI1\\Properties\\launchSettings.json",
@@ -413,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -425,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Cafe_AI1\\appsettings.Development.json",
@@ -437,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Routes.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Routes.razor",
@@ -449,19 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Chat.razor.cs",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
-              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
-              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Chat.razor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:04:53.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Counter.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Counter.razor",
@@ -473,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Chat.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Chat.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Chat.razor",
@@ -485,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "DishGenerator.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor",
@@ -497,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\User.cs",
@@ -509,19 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DishGenerator.razor.cs",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
-              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
-              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\DishGenerator.razor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:19:28.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Error.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Error.razor",
@@ -533,19 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Home.razor",
-              "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Cafe_AI1\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAYwH8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T13:28:17.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Entities\\ChatMessage.cs",
               "RelativeDocumentMoniker": "Cafe_AI.Core\\Entities\\ChatMessage.cs",
@@ -557,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\NavMenu.razor",
@@ -569,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor",
@@ -581,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "MainLayout.razor.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.cs",
@@ -593,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Weather.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Pages\\Weather.razor",
@@ -605,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "App.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\App.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\App.razor",
@@ -617,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "_Imports.razor",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\_Imports.razor",
@@ -629,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\MainLayout.razor.css",
@@ -641,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "UserRole.cs",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI.Core\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "Cafe_AI.Core\\Enums\\UserRole.cs",
@@ -653,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "D:\\Cafe \u0441 AI\\Cafe_AI1\\Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "Cafe_AI1\\Components\\Layout\\NavMenu.razor.css",

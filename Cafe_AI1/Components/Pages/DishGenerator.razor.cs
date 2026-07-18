@@ -1,10 +1,14 @@
 ﻿using Cafe_AI.Core.Entities;
 using Cafe_AI.Core.Models;
+using Cafe_AI.Services;
+using Microsoft.AspNetCore.Components;
 
 namespace Cafe_AI1.Components.Pages
 {
     public partial class DishGenerator
     {
+        [Inject]
+        private DishService DishService { get; set; } = default!;
         private DishGenerationRequest request = new();
         private bool isLoading = false; // Загрузка
         private Dish? generatedDish = null;
@@ -73,12 +77,12 @@ namespace Cafe_AI1.Components.Pages
 
             isLoading = false;
         }
-        private void SaveDish()
+        private async Task SaveDish()
         {
             if (generatedDish != null)
             {
-                saveMessage = $"Блюдо \"{generatedDish.Name}\"" +
-                    $" отправленно на модерацию";
+                await DishService.CreateDishAsync(generatedDish);
+                saveMessage = $"Блюдо \"{generatedDish.Name}\" отправленно на модерацию";
             }
         }
         private void ValidatePriceRange()
