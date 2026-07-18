@@ -149,7 +149,7 @@
             </div>
         }
         else if (generatedDish != null)
-        {
+        {            
             <div class="card shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h5 class="mb-0">🍽️ Результат генерации</h5>
@@ -201,6 +201,14 @@
                                 <div class="card-body text-center py-3">
                                     <h5 class="mb-0">@generatedDish.Calories</h5>
                                     <small class="text-muted">Ккал</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card bg-light">
+                                <div class="card-body text-center py-3">
+                                    <h5 class="mb-0">@generatedDish.Weight г</h5>
+                                    <small class="text-muted">Вес</small>
                                 </div>
                             </div>
                         </div>

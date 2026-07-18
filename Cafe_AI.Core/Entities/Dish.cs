@@ -10,6 +10,7 @@
         public int CookingTimeMinutes { get; set; }
         public string MealType { get; set; } = string.Empty;
         public int Calories { get; set; }
+        public int Weight { get; set; }
         public List<string> Ingredients { get; set; } = new();
         public List<string> Allergens { get; set; } = new();
         public bool IsAiGenerated { get; set; }

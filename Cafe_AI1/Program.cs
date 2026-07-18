@@ -2,6 +2,7 @@ using Cafe_AI1.Components;
 using Microsoft.EntityFrameworkCore;
 using Cafe_AI.DAL;
 using Cafe_AI.Services;
+using Cafe_AI1.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<DishService>();
+builder.Services.AddScoped<AiService>();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -25,9 +28,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapHub<ChatHub>("/chathub");
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
