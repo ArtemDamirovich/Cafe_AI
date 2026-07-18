@@ -31,6 +31,7 @@
         </div>
     </div>
 </div>
+
 @if(!pendingDishes.Any())
 {
     <div class="text-center mt-5">
@@ -128,12 +129,14 @@ else
                     <button type="button" class="btn-close" @onclick="CloseDetails"></button>
                 </div>
                 <div class="modal-body">
+                    <h6>📝Описание</h6>
                     <p>@selectedDish.Description</p>
                     @if (!string.IsNullOrEmpty(selectedDish.Recipe))
                     {
                         <h6>👨‍🍳 Рецепт</h6>
                         <p style="white-space: pre-line;">@selectedDish.Recipe</p>
                     }
+                    <h6>🥘 Ингредиенты</h6>
                     <ul>
                         @foreach (var ingredient in selectedDish.Ingredients)
                         {
