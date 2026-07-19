@@ -2,103 +2,114 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.SignalR.Client;
 
-namespace Cafe_AI1.Components.Pages
+namespace Cafe_AI1.Components.Pages;
+
+public partial class Chat : IAsyncDisposable
 {
-    public partial class Chat : IAsyncDisposable
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
+
+    private HubConnection? hubConnection;
+    private string userName = string.Empty;
+    private string chatMode = "general";
+    private string? currentConnectionId;
+    private List<ChatUser> onlineUsers = new();
+    private ChatUser? selectedUser;
+    private List<ChatMessage> messages = new();
+    private string newMessage = string.Empty;
+    private string nameInput = string.Empty;
+    private string? notificationMessage;
+
+    private List<ChatMessage> currentMessages => chatMode switch
     {
-        [Inject]
-        private NavigationManager Navigation { get; set; } = default!;
+        "general" => messages.Where(m => m.Mode == "general").ToList(),
+        "private" => messages.Where(m =>
+            m.Mode == "private" &&
+            (m.SenderName == userName && m.ReceiverName == selectedUser?.Name ||
+             m.SenderName == selectedUser?.Name && m.ReceiverName == userName)).ToList(),
+        _ => messages
+    };
 
-        private HubConnection? hubConnection;
-        private List<ChatMessage> messages = new();        
-        private string newMessage = string.Empty;
-        private string userName = "Анна";
-        private bool isAiChat = false;
+    protected override void OnInitialized()
+    {
+        // Ждём ввода имени — ничего не делаем
+    }
 
-        private List<User> onlineUsers = new();
-        private User? selectedUser = null;
-        private string? notificationMessage = null;
+    private async Task JoinChat()
+    {
+        if (string.IsNullOrWhiteSpace(nameInput)) return;
 
-        protected override async Task OnInitializedAsync()
+        userName = nameInput;
+
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/chathub"))
+            .Build();
+
+        hubConnection.On<string, string>("ReceiveGeneralMessage", (user, msg) =>
         {
-            hubConnection = new HubConnectionBuilder().WithUrl(Navigation.ToAbsoluteUri("/chathub")).Build();
-
-            hubConnection.On<string, string>("ReceiveMessage", (user, msg) =>
+            if (user != userName)
             {
-                messages.Add(new ChatMessage
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Content = msg,
-                    SenderName = user,
-                    SentAt = DateTime.Now
-                });
+                messages.Add(new ChatMessage { Content = msg, SenderName = user, Mode = "general", SentAt = DateTime.Now });
                 InvokeAsync(StateHasChanged);
-            });
-            await hubConnection.StartAsync();
-
-            LoadMockUser();
-            LoadMockMessages();
-        }
-
-        private void LoadMockMessages()
-        {
-            messages.Add(new ChatMessage { Content = "Привет!", SenderName = "Иван", SentAt = DateTime.Now.AddMinutes(-5) });
-        }
-
-        private void LoadMockUser()
-        {
-            onlineUsers = new List<User>
-            {
-                new User { Name = "Анна", Role = "Админ", IsOnline = true },
-                new User { Name = "Иван", Role = "Повар", IsOnline = true }
-            };
-        }
-
-        private async Task SendMessage()
-        {
-            if(!string.IsNullOrWhiteSpace(newMessage) && hubConnection != null)
-            {
-                if(isAiChat)
-                {
-                    messages.Add(new ChatMessage
-                    {
-                        Id = Guid.NewGuid().ToString(),
-                        Content = newMessage,
-                        SenderName = userName,
-                        SentAt = DateTime.Now
-                    });
-                    GenerateAiResponce(newMessage);
-                }
-                else
-                {
-                    await hubConnection.SendAsync("SendMessage", userName, newMessage);
-                }
-                newMessage = string.Empty;
             }
+        });
+
+        hubConnection.On<string, string>("ReceivePrivateMessage", (user, msg) =>
+        {
+            messages.Add(new ChatMessage { Content = msg, SenderName = user, ReceiverName = userName, Mode = "private", SentAt = DateTime.Now });
+
+            if (chatMode != "private" || selectedUser?.Name != user)
+                notificationMessage = $"📩 Новое сообщение от {user}";
+
+            InvokeAsync(StateHasChanged);
+        });
+
+        hubConnection.On<string, string>("UserOnline", (user, connectionId) =>
+        {
+            if (!onlineUsers.Any(u => u.ConnectionId == connectionId))
+                onlineUsers.Add(new ChatUser { Name = user, ConnectionId = connectionId, IsOnline = true, Role = "Сотрудник" });
+            InvokeAsync(StateHasChanged);
+        });
+
+        hubConnection.On<string>("UserOffline", (connectionId) =>
+        {
+            onlineUsers.RemoveAll(u => u.ConnectionId == connectionId);
+            InvokeAsync(StateHasChanged);
+        });
+
+        await hubConnection.StartAsync();
+        currentConnectionId = hubConnection.ConnectionId;
+        await hubConnection.SendAsync("UserConnected", userName);
+        await hubConnection.SendAsync("RequestOnlineUsers");
+        StateHasChanged();
+    }
+
+    private void SwitchToGeneral() { chatMode = "general"; selectedUser = null; notificationMessage = null; }
+    private void SelectPrivateChat(ChatUser user) { chatMode = "private"; selectedUser = user; notificationMessage = null; }
+
+    private async Task SendMessage()
+    {
+        if (string.IsNullOrWhiteSpace(newMessage)) return;
+
+        if (chatMode == "general")
+        {
+            var msg = new ChatMessage { Content = newMessage, SenderName = userName, Mode = "general", SentAt = DateTime.Now };
+            messages.Add(msg);
+            await hubConnection!.SendAsync("SendToGeneral", userName, newMessage);
+        }
+        else if (chatMode == "private" && selectedUser != null)
+        {
+            var msg = new ChatMessage { Content = newMessage, SenderName = userName, ReceiverName = selectedUser.Name, Mode = "private", SentAt = DateTime.Now };
+            messages.Add(msg);
+            await hubConnection!.SendAsync("SendPrivate", selectedUser.ConnectionId, userName, newMessage);
         }
 
-        private void GenerateAiResponce(string question)
-        {
-            messages.Add(new ChatMessage
-            {
-                Id = Guid.NewGuid().ToString(),
-                Content = "🤖 Ответ ИИ: " + question,
-                SenderName = "ИИ-ассистент",
-                SentAt = DateTime.Now
-            });
-        }
-        private void SwitchToPeopleChat() => isAiChat = false;
-        private void SwitchToAiChat()
-        {
-            isAiChat = true; 
-            selectedUser = null;
-        }
-        public async ValueTask DisposeAsync()
-        {
-            if (hubConnection != null)
-            {
-                await hubConnection.DisposeAsync();
-            }
-        }
+        newMessage = string.Empty;
+        StateHasChanged();
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection != null)
+            await hubConnection.DisposeAsync();
     }
 }

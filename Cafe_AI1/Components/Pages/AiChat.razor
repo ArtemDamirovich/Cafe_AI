@@ -1,0 +1,89 @@
+﻿@page "/ai-chat"
+
+@* Экран входа *@
+@if (string.IsNullOrEmpty(userName))
+{
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h4>🤖 ИИ-ассистент</h4>
+                    <input type="text" class="form-control my-3" @bind="nameInput" placeholder="Ваше имя..." />
+                    <select class="form-select mb-3" @bind="roleInput">
+                        <option value="">Выберите роль...</option>
+                        <option value="Админ">👑 Админ</option>
+                        <option value="Повар">👨‍🍳 Повар</option>
+                        <option value="Официант">💁 Официант</option>
+                    </select>
+                    <button class="btn btn-info w-100" @onclick="JoinAiChat" disabled="@(string.IsNullOrEmpty(nameInput) || string.IsNullOrEmpty(roleInput))">
+                        Начать диалог
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    @* Основной интерфейс *@
+    <div class="row" style="height: 70vh;">
+        <div class="col-md-8 mx-auto d-flex flex-column">
+
+            <div class="border-bottom p-3 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>🤖 ИИ-ассистент</h5>
+                    <small class="text-muted">@userName (@userRole)</small>
+                </div>
+                <div class="d-flex gap-2">
+                    <span class="badge bg-info">@userRole</span>
+                    <a href="/chat" class="btn btn-outline-secondary btn-sm">💬 Чат с коллегами</a>
+                </div>
+            </div>
+
+            <div class="flex-grow-1 overflow-auto p-3">
+                @foreach (var msg in messages)
+                {
+                    var isUser = msg.IsUser;
+                    <div class="mb-2 d-flex @(isUser ? "justify-content-end" : "")">
+                        <div class="p-2 rounded @(isUser ? "bg-primary text-white" : "bg-info text-dark")" style="max-width: 70%;">
+                            <small class="d-block @(isUser ? "text-white-50" : "text-muted")">@msg.SenderName</small>
+                            <div style="white-space: pre-line;">@msg.Content</div>
+                        </div>
+                    </div>
+                }
+
+                @if (isLoading)
+                {
+                    <div class="text-center text-muted">
+                        <div class="spinner-border spinner-border-sm"></div> ИИ думает...
+                    </div>
+                }
+            </div>
+
+            <div class="border-top p-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" @bind="newMessage" placeholder="Спросите ИИ-ассистента..." />
+                    <button class="btn btn-info" @onclick="SendToAi">📤</button>
+                </div>
+                <div class="mt-2 d-flex gap-1 flex-wrap">
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Что сегодня в меню?")'>📋 Меню</button>
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Предложи блюдо дня")'>🍽️ Блюдо дня</button>
+                    <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Какие блюда самые популярные?")'>📊 Популярность</button>
+                    @if (userRole == "Повар")
+                    {
+                        <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Дай рецепт пасты Карбонара")'>👨‍🍳 Рецепт</button>
+                    }
+                    @if (userRole == "Официант")
+                    {
+                        <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Что посоветовать гостю-вегетарианцу?")'>💁 Совет гостю</button>
+                    }
+                    @if (userRole == "Админ")
+                    {
+                        <button class="btn btn-sm btn-outline-info" @onclick='() => QuickAsk("Покажи аналитику по продажам")'>📊 Аналитика</button>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+}

@@ -78,5 +78,48 @@ namespace Cafe_AI.Services
             };
             return result;
         }
+        public async Task<string> AskAssistantAsync(string question, string role)
+        {
+            var roleHint = role switch
+            {
+                "Повар" => "Ты общаешься с ПОВАРОМ. Помогай с рецептами, ингредиентами, техникой приготовления.",
+                "Официант" => "Ты общаешься с ОФИЦИАНТОМ. Помогай с описанием блюд, рекомендациями гостям, аллергенами.",
+                "Админ" => "Ты общаешься с АДМИНИСТРАТОРОМ. Помогай с аналитикой, ценами, управлением.",
+                _ => ""
+            };
+
+            var prompt = $"""
+                Ты — ИИ-ассистент кафе "Свои". {roleHint}
+                Отвечай кратко, по делу, на русском языке.
+        
+                Информация о кафе:
+                - Меню: салат Цезарь (650₽), паста Карбонара (580₽), тирамису (420₽), лимонад (250₽)
+                - Блюдо дня: Поке с лососем и манго (620₽)
+        
+                Вопрос: {question}
+                Ответ:
+            """;
+
+            var chatRequest = new OllamaSharp.Models.Chat.ChatRequest
+            {
+                Model = "gemma2:9b",
+                Stream = false,
+                Messages = new[]
+                {
+            new OllamaSharp.Models.Chat.Message { Role = "user", Content = prompt }
+        }
+            };
+
+            var responseStream = _client.ChatAsync(chatRequest);
+            var fullResponse = new System.Text.StringBuilder();
+
+            await foreach (var response in responseStream)
+            {
+                if (response?.Message?.Content != null)
+                    fullResponse.Append(response.Message.Content);
+            }
+
+            return fullResponse.ToString().Trim();
+        }
     }
 }
